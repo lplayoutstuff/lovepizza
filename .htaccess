@@ -1,0 +1,12 @@
+AddCharset utf-8 .php .html .js
+# Сжатие Text, Html, JavaScript, CSS, Xml:
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript image/svg+xml
+</ifmodule>
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+ RewriteRule ^index\.html$ / [R=301,L]
+ RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+ </IfModule>
+
+ ErrorDocument 404 /404.html
