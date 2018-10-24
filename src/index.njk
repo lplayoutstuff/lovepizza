@@ -1,9 +1,23 @@
 {% set title = "Люблю пицца" %}
-<body>
 {% include 'template/res.head.njk' %}
 
-{#Content#}
+<body>
 
+<div class="root">
+    {% include 'header.njk' %}
+    {% include 'page.index/slider.njk' %}
+    {% include 'page.index/pizza_section.njk' %}
+    {% include 'page.index/combo_section.njk' %}
+    {% include 'page.index/sets_section.njk' %}
+    {% include 'page.index/rolls_section.njk' %}
+    {% include 'page.index/wok_section.njk' %}
+    {% include 'page.index/snacks_section.njk' %}
+    {% include 'page.index/zone.njk' %}
+    {% include 'page.index/drink_section.njk' %}
+    {% include 'page.index/delivery.njk' %}
+</div>
+{% include 'footer.njk' %}
+{% include 'page.index/popups.njk' %}
 {% include 'template/res.scripts.njk' %}
 </body>
 </html>

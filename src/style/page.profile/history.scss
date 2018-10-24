@@ -1,0 +1,79 @@
+.history__head {
+  display: flex;
+  color: #B2B2B2;
+  font-weight: 500;
+  @media (max-width: 740px) {
+    display: none;
+  }
+}
+
+.history__row {
+  display: flex;
+  font-weight: 500;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 17px 37px rgba(0, 0, 0, 0.07);
+  border-radius: 2px;
+  margin-bottom: 5px;
+  @media (max-width: 740px) {
+    display: block;
+    padding: 15px;
+  }
+}
+
+.history__col {
+  flex: 0 0 auto;
+  padding: 20px;
+  .history__row & {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media (max-width: 768px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.history__col--date {
+  width: 180px;
+  .history__head & {
+    padding-left: 0;
+  }
+  @media (max-width: 768px) {
+    width: 150px;
+  }
+}
+
+.history__col--num {
+  width: 100px;
+  @media (max-width: 768px) {
+    width: 80px;
+  }
+}
+
+.history__col--structure {
+  flex: 1 1 auto;
+  width: auto;
+}
+
+.history__col--price {
+  width: 150px;
+  @media (max-width: 768px) {
+    width: 115px;
+  }
+}
+
+.history__row .history__col {
+  @media (max-width: 740px) {
+    &:before {
+      content: attr(data-title);
+      display: block;
+      font-weight: normal;
+      font-size: 12px;
+    }
+    padding: 0;
+    width: auto;
+    margin-bottom: 10px;
+  }
+}
+

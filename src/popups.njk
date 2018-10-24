@@ -1,0 +1,28 @@
+{% set title = "Люблю пицца" %}
+{% include 'template/res.head.njk' %}
+
+<body>
+<style>
+
+</style>
+<div class="root">
+    {% include 'header.njk' %}
+    <div class="inner-wrap">
+        <div class="inner">
+            <div class="inner__content inner__content--pl0">
+                <h1 class="h2">Модальные окна</h1>
+                <span class="i-button i-button--medium" data-popup="#popup1">Карточка товара</span>
+                <span class="i-button i-button--medium" data-popup="#popup2">Регистрация</span>
+                <span class="i-button i-button--medium" data-popup="#popup3">Создание пароля</span>
+                <span class="i-button i-button--medium" data-popup="#popup4">Вход на сайт</span>
+                <span class="i-button i-button--medium" data-popup="#popup5">Восстановление пароля</span>
+                <span class="i-button i-button--medium" data-popup="#popup6">Заказ принят</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.njk' %}
+{% include 'page.index/popups.njk' %}
+{% include 'template/res.scripts.njk' %}
+</body>
+</html>

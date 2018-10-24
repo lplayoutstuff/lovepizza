@@ -1,0 +1,76 @@
+{% set title = "Люблю пицца" %}
+{% include 'template/res.head.njk' %}
+
+<body>
+
+<div class="root">
+    {% include 'header.njk' %}
+    <div class="inner-wrap">
+        <div class="inner sales">
+            <div class="inner__content inner__content--pl0">
+                <h1 class="h2">Акции</h1>
+                <div class="sales__row">
+                    <div class="sales__item">
+                        <div class="sales__item-wrap">
+                            <div class="sales__pic">
+                                <div class="sales__img" style="background-image: url(https://via.placeholder.com/435x330)"></div>
+                            </div>
+                            <div class="sales__body">
+                                <div class="sales__body-top">
+                                    <h2 class="h5 sales__name"><a href="#">Именинникам!</a></h2>
+                                    <p class="sales__text">При заказе 2 пицц диаметром 40 см в день рождения вы получаете легкий и вкусный сет Мидори из 40 шт. абсолютно бесплатно, в подарок!</p>
+                                </div>
+
+                                <div class="sales__body-bottom">
+                                    <a href="#" class="sales__more">Подробнее</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sales__item">
+                        <div class="sales__item-wrap">
+                            <div class="sales__pic">
+                                <div class="sales__img" style="background-image: url(https://via.placeholder.com/435x330)"></div>
+                            </div>
+                            <div class="sales__body">
+                                <div class="sales__body-top">
+                                    <h2 class="h5 sales__name"><a href="#">3+1</a></h2>
+                                    <p class="sales__text">При покупке 3 пицц диаметром 40 см вы абсолютно бесплатно, в подарок, получите пиццу диаметром 30 см</p>
+                                </div>
+
+                                <div class="sales__body-bottom">
+                                    <a href="#" class="sales__more">Подробнее</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sales__item">
+                        <div class="sales__item-wrap">
+                            <div class="sales__pic">
+                                <div class="sales__img" style="background-image: url(https://via.placeholder.com/435x330)"></div>
+                            </div>
+                            <div class="sales__body">
+                                <div class="sales__body-top">
+                                    <h2 class="h5 sales__name"><a href="#">Забери сам — получи скидку!</a></h2>
+                                    <p class="sales__text">При самовывозе в любом из наших филиалов скидка на каждую пиццу или сет 50 ₽</p>
+                                </div>
+
+                                <div class="sales__body-bottom">
+                                    <a href="#" class="sales__more">Подробнее</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.njk' %}
+{% include 'page.index/popups.njk' %}
+{% include 'template/res.scripts.njk' %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% set title = "Люблю пицца" %}
+{% include 'template/res.head.njk' %}
+
+<body>
+
+<div class="root">
+    {% include 'header.njk' %}
+    <div class="inner-wrap">
+        <div class="inner profile">
+            <div class="inner__content">
+                <h1 class="h2">Личный кабинет</h1>
+
+                <div class="profile__form">
+                    {% include "page.profile/form1.njk" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.njk' %}
+{% include 'page.index/popups.njk' %}
+{% include 'template/res.scripts.njk' %}
+</body>
+</html>

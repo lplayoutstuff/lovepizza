@@ -1,0 +1,47 @@
+{% set title = "Люблю пицца" %}
+{% include 'template/res.head.njk' %}
+
+<body>
+
+<div class="root">
+    {% include 'header.njk' %}
+    <div class="inner-wrap">
+        <div class="inner order">
+            <div class="inner__content">
+                <h1 class="h2">Оформление заказа</h1>
+                <div class="order__order">
+                    {% include "page.order/order.njk" %}
+                </div>
+                <div class="order__form">
+                    {% include "page.order/form1.njk" %}
+                </div>
+                <div class="order__checkout">
+                    <h2 class="h4">Оплата</h2>
+                    {% include "page.order/checout.njk" %}
+                </div>
+                <div class="price-finish">
+                    <div class="price-finish__val">
+                        <div class="price-finish__val-title">Сумма заказа:</div>
+                        <div class="price-finish__val-price">1490 ₽</div>
+                    </div>
+                    <div class="price-finish__buttons">
+                        <div class="price-finish__back">
+                            <a href="#" class="price-finish__back-btn">
+                                <span>← Вернуться в корзину</span>
+                                <span>В корзину</span>
+                            </a>
+                        </div>
+                        <div class="price-finish__submit">
+                            <a href="#" class="i-button i-button--medium">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.njk' %}
+{% include 'page.index/popups.njk' %}
+{% include 'template/res.scripts.njk' %}
+</body>
+</html>

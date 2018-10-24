@@ -1,0 +1,107 @@
+{% set title = "Люблю пицца" %}
+{% include 'template/res.head.njk' %}
+
+<body>
+
+<div class="root">
+    {% include 'header.njk' %}
+    <div class="inner-wrap">
+        <div class="inner contacts">
+            <div class="inner__content inner__content--pb0">
+                <h1 class="h2 contacts__title">Контакты</h1>
+                <h2 class="h4 contacts__subtitle">Филиалы  «Люблю Pizza»</h2>
+                <p class="contacts__about">Вы можете забрать свой заказ самостоятельно в любом из наших филиалов по адресам:</p>
+
+                <div class="contacts__row">
+                    <div class="contacts__contact">
+                        <div class="contacts__contact-wrap">
+                            <div class="contacts__contact-item">
+                                Номер телефона:
+                                <a href="tel:+7412600500" class="contacts__contact-tel">600-500</a>
+                            </div>
+                            <div class="contacts__contact-item">
+                                Электронная почта:
+                                <a href="mailto:Order.kursk.pizza@gmail.com" class="contacts__contact-mail">Order.kursk.pizza@gmail.com</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="contacts__branches">
+                        <div class="contacts__branch">
+                            <div class="contacts__branch-address">
+                                ул. Хуторская, 12В
+                            </div>
+                            <div class="contacts__branch-time">
+                                Время работы:
+                                <span class="contacts__branch-hours">9:00 — 23:00</span>
+                            </div>
+                        </div>
+                        <div class="contacts__branch">
+                            <div class="contacts__branch-address">
+                                ул. 50 лет Октября, 155В
+                            </div>
+                            <div class="contacts__branch-time">
+                                Время работы:
+                                <span class="contacts__branch-hours">9:00 — 23:00</span>
+                            </div>
+                        </div>
+                        <div class="contacts__branch">
+                            <div class="contacts__branch-address">
+                                ул. Краснознаменная, 22
+                            </div>
+                            <div class="contacts__branch-time">
+                                Время работы:
+                                <span class="contacts__branch-hours">9:00 — 23:00</span>
+                            </div>
+                        </div>
+                        <div class="contacts__branch">
+                            <div class="contacts__branch-address">
+                                ул. Энергетиков, 4
+                            </div>
+                            <div class="contacts__branch-time">
+                                Время работы:
+                                <span class="contacts__branch-hours">9:00 — 23:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        <p class="contacts__premap">
+            Более того, при самовывозе у нас действуют особые условия! Посмотрите подробнее в разделе <a href="#">Акции</a>
+        </p>
+            </div>
+        </div>
+                <div class="contacts__map">
+                    код карты
+                </div>
+        <div class="inner contacts">
+            <div class="inner__content">
+                <h2 class="h4 contacts__subtitle">Юридическая информация</h2>
+                <div class="contacts__legal">
+                    <div class="contacts__legal-row">
+                        <div class="contacts__legal-title">ОГРНИП:</div>
+                        <div class="contacts__legal-val">317463200022335</div>
+                    </div>
+                    <div class="contacts__legal-row">
+                        <div class="contacts__legal-title">ИНН:</div>
+                        <div class="contacts__legal-val">462701020311</div>
+                    </div>
+                    <div class="contacts__legal-row">
+                        <div class="contacts__legal-title">Краткое название организации:</div>
+                        <div class="contacts__legal-val">ИП Булгаков И.Г.</div>
+                    </div>
+                    <div class="contacts__legal-row">
+                        <div class="contacts__legal-title">Юридический адрес:</div>
+                        <div class="contacts__legal-val">
+                            305003, Курская обл., Курск г., Бойцов 9 дивизии ул., дом №185, корп. ж, кв. 17</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.njk' %}
+{% include 'page.index/popups.njk' %}
+{% include 'template/res.scripts.njk' %}
+</body>
+</html>

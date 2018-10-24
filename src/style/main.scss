@@ -1,3 +1,29 @@
+$tablet: 1024px;
+$mobile: 768px;
+
 @import "helpers/normalize";
 @import "partials/fontface";
 @import "partials/template";
+@import "partials/ui";
+
+@import "partials/header";
+@import "partials/popups";
+@import "partials/footer";
+@import "partials/price_finish";
+@import "partials/inner";
+
+@import "page.index/slider";
+@import "page.index/product";
+@import "page.index/combo";
+@import "page.index/zone";
+@import "page.index/delivery";
+
+@import "page.cart/cart";
+@import "page.cart/list";
+@import "page.cart/sauces";
+@import "page.cart/recommendation";
+
+@import "page.profile/profile";
+@import "page.profile/history";
+
+@import "page.order/order";

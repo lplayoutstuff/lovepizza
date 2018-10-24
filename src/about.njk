@@ -1,0 +1,50 @@
+{% set title = "Люблю пицца" %}
+{% include 'template/res.head.njk' %}
+
+<body>
+
+<div class="root">
+    {% include 'header.njk' %}
+    <div class="inner-wrap">
+        <div class="inner about">
+            <div class="inner__content">
+                <h1 class="h2 about__title">Люблю Pizza
+                    <span>Компания существует на рынке уже более 6 лет. </span>
+                </h1>
+
+<div class="about__pic-wrap">
+    <img src="img/media/about.jpg" class="about__pic" alt="">
+</div>
+
+
+                <div class="about__row">
+                    <div class="about__content">
+                        <h2 class="h5">Мы</h2>
+                        <p>Основная миссия компании – накормить вас, наши Любимые Клиенты! <br>
+                            Мы всегда делаем наш продукт так, чтобы он был сытным, качественным и по-домашнему вкусным. </p>
+
+                        <h2 class="h5">У нас в компании шутят</h2>
+                        <p>
+                            С помощью одной нашей пиццы можно накормить 8 мужчин, 16 женщин и 32 ребенка. А, как говорится, в каждой шутке есть доля шутки – в каждой нашей пицце весьма щедрое количество ингредиентов, отсутствует бортик и при одном взгляде на нее просыпается аппетит!</p>
+                        <p>Точно такой же подход мы демонстрируем и в роллах, закусках, салатах и любом другом товаре из
+                            нашего ассортимента. Мы никогда не предложим своему Клиенту то, что не стали бы есть сами.</p>
+
+                        <p class="about__slog">
+                            Добро пожаловать в Люблю Pizza – мир вкусных и качественных продуктов, приготовленных с любовью!
+                        </p>
+                    </div>
+
+                    <div class="about__heart">
+                        <img src="img/media/heart.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.njk' %}
+{% include 'page.index/popups.njk' %}
+{% include 'template/res.scripts.njk' %}
+</body>
+</html>
