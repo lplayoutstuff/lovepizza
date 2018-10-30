@@ -85,7 +85,9 @@
   transition: .2s;
   margin-bottom: 6px;
   &:hover {
-    //transform: translateY(-5px);
+    transform: translateY(-3px);
+    box-shadow: 0px 17px 37px rgba(0, 0, 0, 0.07);
+
   }
   &.is-orange {
     background: #F44336;

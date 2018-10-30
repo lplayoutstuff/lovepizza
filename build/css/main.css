@@ -2340,6 +2340,12 @@ a.login-popup__url {
   -o-transition: .2s;
   transition: .2s;
   margin-bottom: 6px; }
+  .filter__item:hover {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0px 17px 37px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 17px 37px rgba(0, 0, 0, 0.07); }
   .filter__item.is-orange {
     background: #F44336;
     color: #fff; }
