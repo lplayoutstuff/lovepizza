@@ -2161,7 +2161,8 @@ a.login-popup__url {
 
 .slider__item-aspect {
   padding-top: 23.95833%;
-  position: relative; }
+  position: relative;
+  display: block; }
 
 .slider__item-img {
   position: absolute;
@@ -2172,7 +2173,16 @@ a.login-popup__url {
   overflow: hidden; }
   .slider__item-img img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s; }
+  .slider__item-aspect:hover .slider__item-img img {
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transform: scale(1.06); }
 
 .slider__prev, .slider__next {
   position: absolute;
