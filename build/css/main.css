@@ -2007,7 +2007,8 @@ a.login-popup__url {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: 47.54%;
-  max-width: 290px; }
+  max-width: 290px;
+  display: block; }
   @media (max-width: 580px) {
     .sales__pic {
       height: 200px;
